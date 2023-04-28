@@ -31,9 +31,10 @@ class EmployeeController extends Controller
               </tr>
             </thead>
             <tbody>';
+            $i=1;
             foreach ($emps as $emp) {
                 $output .= '<tr>
-                <td>' . $emp->id . '</td>
+                <td>' . $i++ . '</td>
                 <td><img src="storage/images/' . $emp->avatar . '" width="50" class="img-thumbnail rounded-circle"></td>
                 <td>' . $emp->first_name . ' ' . $emp->last_name . '</td>
                 <td>' . $emp->email . '</td>
